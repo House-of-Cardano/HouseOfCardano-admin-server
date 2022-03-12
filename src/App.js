@@ -1,3 +1,4 @@
+import React from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
 import './App.css';
 
@@ -8,17 +9,9 @@ import Minting from './pages/Minting';
 import Header from './components/header/Header';
 
 function App() {
-  const navbar = {
-    header1: 'home', header2: 'setup', header3: 'transactions', header4: 'minting'
-  };
   return (
     <div>
-      <Header 
-        header1={navbar.header1}
-        header2={navbar.header2}
-        header3={navbar.header3}
-        header4={navbar.header4}
-      />
+      <Header />
         <main>
           <Switch>
             <Route path='/' exact>
