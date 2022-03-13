@@ -22,7 +22,7 @@ const QueryScriptAddr = () => {
         <section>
           <button onClick={fetchBlockchainData}>Fetch Data</button>
         </section>
-        <section>
+        <section role="dialog">
           <BlockchainAPI apiData={apiData} />
         </section>
       </React.Fragment>
