@@ -33,7 +33,7 @@ function App() {
           <Route path="/transactions/queryscriptaddr">
             <QueryScriptAddr />
           </Route>
-          <Route path="/transactions/calculatetransactionparamters">
+          <Route path="/transactions/calculatetransactionparameters">
             <QueryScriptAddr />
           </Route>
           <Route path="/transactions/transfertransactions">
