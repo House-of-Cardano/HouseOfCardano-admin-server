@@ -21,7 +21,7 @@ describe("Transactions component", () => {
     });
     expect(queryElement).toBeInTheDocument();
   });
-  test("renders calculate transaction paramtres", () => {
+  test("renders calculate transaction parameters", () => {
     // Arange
     render(
       <BrowserRouter>
@@ -33,7 +33,7 @@ describe("Transactions component", () => {
     // ... nothing
 
     // Assert
-    const queryElement = screen.getByText("calculate transaction paramtres", {
+    const queryElement = screen.getByText("calculate transaction parameters", {
       exact: true,
     });
     expect(queryElement).toBeInTheDocument();

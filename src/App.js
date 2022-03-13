@@ -33,6 +33,18 @@ function App() {
           <Route path="/transactions/queryscriptaddr">
             <QueryScriptAddr />
           </Route>
+          <Route path="/transactions/calculatetransactionparamters">
+            <QueryScriptAddr />
+          </Route>
+          <Route path="/transactions/transfertransactions">
+            <QueryScriptAddr />
+          </Route>
+          <Route path="/transactions/queryaddresses">
+            <QueryScriptAddr />
+          </Route>
+          <Route path="/transactions/transfertowinningaddresses">
+            <QueryScriptAddr />
+          </Route>
         </Switch>
       </main>
     </div>

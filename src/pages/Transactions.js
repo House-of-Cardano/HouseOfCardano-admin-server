@@ -10,16 +10,16 @@ function Transactions() {
         <Link to="/transactions/queryscriptaddr">
           <p>query script address</p>
         </Link>
-        <Link to="/calculatetransactionparamtres">
-          <p>calculate transaction paramtres</p>
+        <Link to="/transactions/calculatetransactionparameters">
+          <p>calculate transaction parameters</p>
         </Link>
-        <Link to="/transfertransactions">
+        <Link to="/transactions/transfertransactions">
           <p>transfer transactions</p>
         </Link>
-        <Link to="/queryaddresses">
+        <Link to="/transactions/queryaddresses">
           <p>query addresses</p>
         </Link>
-        <Link to="/transfertowinningaddresses">
+        <Link to="/transactions/transfertowinningaddresses">
           <p>transfer to winning addresses</p>
         </Link>
       </div>
