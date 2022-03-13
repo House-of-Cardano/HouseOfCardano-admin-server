@@ -13,7 +13,7 @@ function Transactions() {
         <Link to="/transactions/calculatetransactionparameters">
           <p>calculate transaction parameters</p>
         </Link>
-        <Link to="/transactions/transfertransactions">
+        <Link to="/transactions/transfer">
           <p>transfer transactions</p>
         </Link>
         <Link to="/transactions/queryaddresses">

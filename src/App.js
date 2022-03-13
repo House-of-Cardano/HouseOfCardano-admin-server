@@ -8,6 +8,10 @@ import Setup from "./pages/Setup";
 import Transactions from "./pages/Transactions";
 import Minting from "./pages/Minting";
 import QueryScriptAddr from "./pages/QueryScriptAddr";
+import Transfer from "./pages/Transfer";
+import CalculateParameters from "./pages/CalculateParameters";
+import QueryAddresses from "./pages/QueryAddresses";
+import TransferWinners from "./pages/TransferWinners";
 
 function App() {
   return (
@@ -34,16 +38,16 @@ function App() {
             <QueryScriptAddr />
           </Route>
           <Route path="/transactions/calculatetransactionparameters">
-            <QueryScriptAddr />
+            <CalculateParameters />
           </Route>
-          <Route path="/transactions/transfertransactions">
-            <QueryScriptAddr />
+          <Route path="/transactions/transfer">
+            <Transfer />
           </Route>
           <Route path="/transactions/queryaddresses">
-            <QueryScriptAddr />
+            <QueryAddresses />
           </Route>
           <Route path="/transactions/transfertowinningaddresses">
-            <QueryScriptAddr />
+            <TransferWinners />
           </Route>
         </Switch>
       </main>
