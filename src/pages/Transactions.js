@@ -1,20 +1,28 @@
-import { Route, Switch } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-import TransactionsEnabler from "../components/transactions/Transactions";
 import styles from "./Transactions.module.css";
-
-import QueryScriptAddr from "./QueryScriptAddr";
 
 function Transactions() {
   return (
     <div className={styles.transactions}>
       <h1>The Transactions Page</h1>
-      <TransactionsEnabler></TransactionsEnabler>
-      <Switch>
-        <Route path="/transactions/queryscriptaddr">
-          <QueryScriptAddr />
-        </Route>
-      </Switch>
+      <div>
+        <Link to="/transactions/queryscriptaddr">
+          <p>query script address</p>
+        </Link>
+        <Link to="/calculatetransactionparamtres">
+          <p>calculate transaction paramtres</p>
+        </Link>
+        <Link to="/transfertransactions">
+          <p>transfer transactions</p>
+        </Link>
+        <Link to="/queryaddresses">
+          <p>query addresses</p>
+        </Link>
+        <Link to="/transfertowinningaddresses">
+          <p>transfer to winning addresses</p>
+        </Link>
+      </div>
     </div>
   );
 }
