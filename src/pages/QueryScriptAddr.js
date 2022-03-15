@@ -8,16 +8,8 @@ import QueryBlockchainInput from "../components/userInput/QueryBlockchainInput";
 const QueryScriptAddr = () => {
   const [apiData, setData] = useState([]);
 
-  const addQueryDataHandler = query => {
-    console.log('Hello JOBBY');
-    console.log(query.addr);
-    console.log(query.dHash);
-    console.log(query.url);
-    const url = query.url
-    return url
-  };
-
-  function fetchBlockchainData(url) {
+  const addQueryDataHandler = (query) => {
+    const url = query.url;
     fetch(url)
       .then((response) => {
         return response.json();
@@ -25,9 +17,11 @@ const QueryScriptAddr = () => {
       .then((data) => {
         setData(data);
       });
-      console.log("Hello POOH")
-      console.log(url)
-  }
+  };
+
+  // const addr = "addr_test1wzhfye4zxffxd59gg0fhjzavy7uuhpul04kr5myavevh29svlsrpc";
+  // const datumHash =
+  //   "\\xfac96da1bf190d85ae7e7a45b07b95826c3eb91b839564959d8411d4e0dc089c";
   return (
     <div className={styles.query}>
       <h1>Query Script Address</h1>
@@ -35,9 +29,6 @@ const QueryScriptAddr = () => {
         <QueryBlockchainInput onQueryData={addQueryDataHandler} />
       </section>
       <React.Fragment>
-        <section>
-          <button onClick={fetchBlockchainData}>Fetch Data</button>
-        </section>
         <section role="dialog">
           <BlockchainAPI apiData={apiData} />
         </section>
