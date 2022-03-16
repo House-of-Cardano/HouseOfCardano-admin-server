@@ -8,6 +8,7 @@ const BlockchainAPI = (props) => {
           address={apiData.address}
           value={apiData.value}
           utxo={apiData.hash}
+          index={apiData.index}
           datumHash={apiData.data_hash}
         />
       ))}

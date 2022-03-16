@@ -42,7 +42,9 @@ const QueryForm = (props) => {
         </div>
       </div>
       <div>
-        <button type="submit">Add input</button>
+        <button type="submit">View Data</button>
+        <button type="submit">Control Data</button>
+        <button type="submit">Initiate Transfer</button>
       </div>
     </form>
   );
