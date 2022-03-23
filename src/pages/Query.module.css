@@ -1,0 +1,26 @@
+.query h1 {
+  margin-top: -5%;
+  margin-bottom: 3%;
+  letter-spacing: 1.5px;
+}
+
+.transactions div {
+  align-content: center;
+}
+
+.query button {
+  font: inherit;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border: 1px solid #40005d;
+  background-color: #40005d;
+  color: white;
+  border-radius: 12px;
+  margin-right: 1rem;
+}
+
+.query button:hover,
+.query button:active {
+  background-color: #510674;
+  border-color: #510674;
+}
