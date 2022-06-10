@@ -20,7 +20,7 @@ const QueryForm = (props) => {
     const queryData = {
       addr: enteredAddr,
       dHash: enteredDhash,
-      url: `http://167.86.98.239:8000/query/cardano-explorer?addr=${enteredAddr}&datumHash=${enteredDhash}`
+      url: `http://167.86.98.239:8000/query/cardano-explorer-queryScriptAddr?addr=${enteredAddr}&datumHash=${enteredDhash}`
     };
     props.onSaveQueryData(queryData);
     setEnteredAddr("");

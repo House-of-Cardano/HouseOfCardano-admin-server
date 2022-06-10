@@ -11,6 +11,9 @@ const Header = () => {
                         <NavLink activeClassName={styles.active} to='/home'>home</NavLink>
                     </li>
                     <li>
+                        <NavLink activeClassName={styles.active} to='/hashfunction'>hashFunction</NavLink>
+                    </li>
+                    <li>
                         <NavLink activeClassName={styles.active} to='/setup'>setup</NavLink>
                     </li>
                     <li>
