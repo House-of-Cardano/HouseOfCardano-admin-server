@@ -4,6 +4,7 @@ import "./App.css";
 
 import Header from "./components/header/Header";
 import Home from "./pages/Home";
+import HashFunction from "./pages/HashFunction"
 import Setup from "./pages/Setup";
 import Transactions from "./pages/Transactions";
 import Minting from "./pages/Minting";
@@ -24,6 +25,9 @@ function App() {
           </Route>
           <Route path="/home">
             <Home />
+          </Route>
+          <Route path="/hashfunction">
+            <HashFunction />
           </Route>
           <Route path="/setup">
             <Setup />
